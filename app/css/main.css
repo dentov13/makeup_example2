@@ -213,10 +213,100 @@ ul > li {
   color: #8c8f94;
 }
 
+#header .header_iphone {
+  position: absolute;
+  bottom: -310px;
+  left: 50%;
+  margin-left: -185px;
+}
+
 #header .video-btn {
   margin-top: 48px;
 }
 
 #header .video-btn i {
   margin-right: 15px;
+}
+
+#features {
+  padding: 120px 0;
+}
+
+#features .feature {
+  padding: 0px 38px;
+}
+
+#features .feature .f-icon {
+  margin-bottom: 48px;
+}
+
+#features .feature .f-icon i {
+  font-size: 42px;
+  color: #267df4;
+}
+
+#iphone-feature {
+  position: relative;
+  padding: 240px 0 330px;
+}
+
+#iphone-feature .btns-container {
+  margin-top: 62px;
+}
+
+#iphone-feature .btns-container a {
+  margin-right: 20px;
+  margin-bottom: 18px;
+}
+
+#iphone-feature .btns-container a i {
+  margin-left: 50px;
+  font-size: 14px;
+}
+
+#iphone-feature .btns-container a:last-child {
+  margin-right: 0;
+}
+
+#iphone-feature .iphone-showcase {
+  position: absolute;
+  bottom: 110px;
+  right: 50%;
+}
+
+#map-feature {
+  padding: 120px 0 140px;
+  position: relative;
+  overflow: hidden;
+}
+
+#map-feature .partners {
+  margin-top: 52px;
+}
+
+#map-feature .partners .title {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#map-feature .partners ul {
+  margin: 26px 0 0;
+}
+
+#map-feature .partners ul li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+#map-feature .partners ul li:last-child {
+  margin-right: 0;
+}
+
+#map-feature .map-showcase {
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
 }
