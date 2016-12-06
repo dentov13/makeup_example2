@@ -135,7 +135,7 @@ input
   right: 4px
 
 // ================== NAVIGATION ==================
-#main-nav
+#nav
   position: fixed
   left: 0
   top: 0
@@ -508,11 +508,26 @@ input
     letter-spacing: 0.1em
 
 // ================== RESPONSIVE 992 ==================
-@media only screen and (max-width: 992px)
-  #main-nav
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+  #nav
+    .container
+      width: 1000px
+
+  #footer
+    .socials
+      li
+        margin-right: 10px
+
+
+
+// ================== RESPONSIVE 992 ==================
+@media only screen and (max-width: 991px)
+  #nav
     .col-md-4
       &:first-child, &:last-child
         display: none
+    #navigation
+      padding-top: 6px
     .logo
       padding-top: 0px
 
@@ -596,7 +611,7 @@ input
 // ================== RESPONSIVE 768 ==================
 @media only screen and (max-width: 768px)
   #iphone-screens
-    padding: 120px 0 460px
+    padding: 120px 0 550px
     .images-list li
       position: absolute
       width: 178px
@@ -650,6 +665,13 @@ input
   #footer
     .footer-container
       padding-top: 80px
-      padding-bottom: 80px
+
+// ================== RESPONSIVE  ==================
+@media only screen and (max-width: 405px)
+  #footer
     .footer-links
-      width: 100%
+      width: 50%
+      text-align: center
+      &:last-child
+        width: 100%
+

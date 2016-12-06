@@ -165,7 +165,7 @@ input[type="text"]:focus, input[type="email"]:focus {
   right: 4px;
 }
 
-#main-nav {
+#nav {
   position: fixed;
   left: 0;
   top: 0;
@@ -176,7 +176,7 @@ input[type="text"]:focus, input[type="email"]:focus {
   background-color: transparent;
 }
 
-#main-nav #navigation {
+#nav #navigation {
   color: #26272d;
   text-decoration: none;
   position: absolute;
@@ -185,68 +185,68 @@ input[type="text"]:focus, input[type="email"]:focus {
   z-index: 2;
 }
 
-#main-nav #navigation:hover {
+#nav #navigation:hover {
   color: #267df4 !important;
 }
 
-#main-nav ul {
+#nav ul {
   padding: 0;
 }
 
-#main-nav ul li {
+#nav ul li {
   display: inline-block;
   margin-right: 40px;
 }
 
-#main-nav ul li a {
+#nav ul li a {
   color: #26272d;
   text-decoration: none;
 }
 
-#main-nav ul li a:hover {
+#nav ul li a:hover {
   color: #267df4;
 }
 
-#main-nav ul li .help {
+#nav ul li .help {
   color: rgba(38, 39, 45, 0.4);
 }
 
-#main-nav ul li .btn-blue {
+#nav ul li .btn-blue {
   color: #ffffff;
 }
 
-#main-nav ul li .btn-blue:hover {
+#nav ul li .btn-blue:hover {
   color: #ffffff;
 }
 
-#main-nav ul li:last-child {
+#nav ul li:last-child {
   margin-right: 0;
 }
 
-#main-nav ul.left {
+#nav ul.left {
   text-align: left;
   margin-left: 50px;
 }
 
-#main-nav ul.left li {
+#nav ul.left li {
   display: inline-block;
   padding: 9px 0;
 }
 
-#main-nav ul.left li:first-child {
+#nav ul.left li:first-child {
   margin-right: 30px;
 }
 
-#main-nav ul.right {
+#nav ul.right {
   text-align: right;
 }
 
-#main-nav .logo {
+#nav .logo {
   display: inline-block;
   padding-top: 11px;
 }
 
-#main-nav.active {
+#nav.active {
   background-color: #ffffff;
   padding: 24px 0;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
@@ -736,11 +736,23 @@ input[type="text"]:focus, input[type="email"]:focus {
   letter-spacing: 0.1em;
 }
 
-@media only screen and (max-width: 992px) {
-  #main-nav .col-md-4:first-child, #main-nav .col-md-4:last-child {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #nav .container {
+    width: 1000px;
+  }
+  #footer .socials li {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #nav .col-md-4:first-child, #nav .col-md-4:last-child {
     display: none;
   }
-  #main-nav .logo {
+  #nav #navigation {
+    padding-top: 6px;
+  }
+  #nav .logo {
     padding-top: 0px;
   }
   #features {
@@ -840,7 +852,7 @@ input[type="text"]:focus, input[type="email"]:focus {
 
 @media only screen and (max-width: 768px) {
   #iphone-screens {
-    padding: 120px 0 460px;
+    padding: 120px 0 550px;
   }
   #iphone-screens .images-list li {
     position: absolute;
@@ -903,9 +915,15 @@ input[type="text"]:focus, input[type="email"]:focus {
   }
   #footer .footer-container {
     padding-top: 80px;
-    padding-bottom: 80px;
   }
+}
+
+@media only screen and (max-width: 405px) {
   #footer .footer-links {
+    width: 50%;
+    text-align: center;
+  }
+  #footer .footer-links:last-child {
     width: 100%;
   }
 }

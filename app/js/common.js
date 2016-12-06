@@ -3,10 +3,10 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 		var scroll = $(this).scrollTop();
 		if (scroll > 20) {
-			$('#main-nav').addClass('active');
+			$('#nav').addClass('active');
 		}
 		else {
-			$('#main-nav').removeClass('active');
+			$('#nav').removeClass('active');
 		};
 	});
 
