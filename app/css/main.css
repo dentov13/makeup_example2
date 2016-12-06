@@ -735,3 +735,177 @@ input[type="text"]:focus, input[type="email"]:focus {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+
+@media only screen and (max-width: 992px) {
+  #main-nav .col-md-4:first-child, #main-nav .col-md-4:last-child {
+    display: none;
+  }
+  #main-nav .logo {
+    padding-top: 0px;
+  }
+  #features {
+    padding: 100px 0;
+  }
+  #features .feature-item {
+    margin-bottom: 80px;
+  }
+  #features .feature-item:last-child {
+    margin-bottom: 0;
+  }
+  #features .feature {
+    padding: 0px 0px;
+  }
+  #features .feature .f-icon {
+    margin-bottom: 48px;
+  }
+  #features .feature .f-icon i {
+    font-size: 42px;
+    color: #267df4;
+  }
+  #iphone-feature {
+    padding: 80px 0 60px;
+  }
+  #iphone-feature .iphone-showcase {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    padding: 0 15px;
+    margin-top: 64px;
+  }
+  #iphone-feature .iphone-showcase img {
+    width: 100%;
+  }
+  #map-feature {
+    padding: 80px 0 100px;
+  }
+  #map-feature .map-showcase {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    padding: 0 15px;
+    margin-top: 64px;
+  }
+  #map-feature .map-showcase img {
+    width: 100%;
+  }
+  #iphone-screens {
+    padding: 120px 0 620px;
+  }
+  #iphone-screens .images-list li {
+    position: absolute;
+    width: 240px;
+    top: 68px;
+  }
+  #iphone-screens .images-list li img {
+    max-width: 100%;
+  }
+  #iphone-screens .images-list li:nth-child(1) {
+    margin-left: -680px;
+  }
+  #iphone-screens .images-list li:nth-child(2) {
+    margin-left: -410px;
+  }
+  #iphone-screens .images-list li:nth-child(4) {
+    margin-right: -410px;
+  }
+  #iphone-screens .images-list li:nth-child(5) {
+    margin-right: -680px;
+  }
+  #iphone-screens .images-list li.main-img {
+    width: 295px;
+    margin-left: -148px;
+  }
+  #customers .carousel-control.left, #customers .carousel-control.right {
+    display: none;
+  }
+  #plan {
+    padding: 120px 0 150px;
+  }
+  #plan #price_tables .individual.active, #plan #price_tables .company.active {
+    margin-top: 80px;
+  }
+  #plan .toggle-container .switch-toggles .individual, #plan .toggle-container .switch-toggles .company {
+    margin-top: 0;
+  }
+  #footer .socials {
+    margin-bottom: 60px;
+  }
+  #footer .footer-links {
+    margin-bottom: 30px;
+  }
+  #footer .footer-links:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #iphone-screens {
+    padding: 120px 0 460px;
+  }
+  #iphone-screens .images-list li {
+    position: absolute;
+    width: 178px;
+    top: 52px;
+  }
+  #iphone-screens .images-list li img {
+    max-width: 100%;
+  }
+  #iphone-screens .images-list li:nth-child(1) {
+    margin-left: -502px;
+  }
+  #iphone-screens .images-list li:nth-child(2) {
+    margin-left: -304px;
+  }
+  #iphone-screens .images-list li:nth-child(4) {
+    margin-right: -304px;
+  }
+  #iphone-screens .images-list li:nth-child(5) {
+    margin-right: -502px;
+  }
+  #iphone-screens .images-list li.main-img {
+    width: 220px;
+    margin-left: -110px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  input[type="text"], input[type="email"] {
+    padding: 16px 26px;
+  }
+  #header {
+    padding: 160px 0 460px;
+  }
+  #header .header_iphone {
+    bottom: -220px;
+    margin-left: -140px;
+    width: 280px;
+  }
+  #ready-to-buy .form-group .btn, #subscribe .form-group .btn {
+    position: relative;
+    margin-top: 14px;
+  }
+  #customers {
+    padding: 120px 0;
+  }
+  #customers .carousel-indicators li {
+    width: 90px;
+    height: 90px;
+  }
+  #plan {
+    padding: 120px 0 100px;
+  }
+  #plan .price-table {
+    width: 340px;
+    max-width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+    float: none;
+  }
+  #footer .footer-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #footer .footer-links {
+    width: 100%;
+  }
+}
