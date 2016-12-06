@@ -8,13 +8,14 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-.cf:before,
-.cf:after {
+.cf:before {
   content: "";
   display: table;
 }
 
 .cf:after {
+  content: "";
+  display: table;
   clear: both;
 }
 
@@ -47,17 +48,17 @@ h4 {
   margin-bottom: 25px;
 }
 
-p.subtitle {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 p {
   font-size: 18px;
   line-height: 28px;
   color: #8c8f94;
+}
+
+p .subtitle {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 a {
@@ -81,7 +82,7 @@ ul {
   padding-left: 0px;
 }
 
-ul > li {
+ul li {
   list-style: none;
 }
 
@@ -121,14 +122,19 @@ ul > li {
   color: white;
 }
 
-.btn-blue:hover, .btn-blue:focus,
-.btn-green:hover, .btn-green:focus,
+.btn-blue:hover, .btn-blue:focus {
+  color: #ffffff;
+}
+
+.btn-green:hover, .btn-green:focus {
+  color: #ffffff;
+}
+
 .btn-dark:hover, .btn-dark:focus {
   color: #ffffff;
 }
 
-input[type="text"],
-input[type="email"] {
+input[type="text"], input[type="email"] {
   width: 502px;
   height: 50px;
   max-width: 100%;
@@ -141,22 +147,19 @@ input[type="email"] {
           border-radius: 30px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus {
+input[type="text"]:focus, input[type="email"]:focus {
   outline: none;
   color: #26272d;
 }
 
-#ready-to-buy .form-group,
-#subscribe .form-group {
+#ready-to-buy .form-group, #subscribe .form-group {
   position: relative;
   width: 502px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-#ready-to-buy .form-group .btn,
-#subscribe .form-group .btn {
+#ready-to-buy .form-group .btn, #subscribe .form-group .btn {
   position: absolute;
   top: 4px;
   right: 4px;
@@ -241,6 +244,13 @@ input[type="email"]:focus {
 #main-nav .logo {
   display: inline-block;
   padding-top: 11px;
+}
+
+#main-nav.active {
+  background-color: #ffffff;
+  padding: 24px 0;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 
 #header {
@@ -426,7 +436,6 @@ input[type="email"]:focus {
 
 #ready-to-buy {
   padding: 120px 0 130px;
-  background-color: #f4f4f5;
 }
 
 #ready-to-buy form {
@@ -458,21 +467,6 @@ input[type="email"]:focus {
 #ready-to-buy .btn-dark span b {
   font-size: 22px;
   line-height: 18px;
-}
-
-#subscribe {
-  padding: 90px 0 50px;
-}
-
-#subscribe .btn {
-  padding-left: 34px;
-  padding-right: 34px;
-}
-
-#subscribe .promise {
-  font-size: 14px;
-  margin-top: 10px;
-  margin-bottom: 0;
 }
 
 #plan {
@@ -511,8 +505,7 @@ input[type="email"]:focus {
   transition: color 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 }
 
-#plan .toggle-container .switch-toggles .individual.active,
-#plan .toggle-container .switch-toggles .company.active {
+#plan .toggle-container .switch-toggles .individual.active, #plan .toggle-container .switch-toggles .company.active {
   color: #26272d;
 }
 
@@ -629,10 +622,8 @@ input[type="email"]:focus {
   -webkit-transform: scale(0.95);
       -ms-transform: scale(0.95);
           transform: scale(0.95);
-  -webkit-transition: opacity 0.97s, -webkit-transform 0.97s;
-  transition: opacity 0.97s, -webkit-transform 0.97s;
-  transition: opacity 0.97s, transform 0.97s;
-  transition: opacity 0.97s, transform 0.97s, -webkit-transform 0.97s;
+  -webkit-transition: opacity 0.97s;
+  transition: opacity 0.97s;
   -webkit-transition-timing-function: cubic-bezier(0.545, 0, 0.05, 1);
           transition-timing-function: cubic-bezier(0.545, 0, 0.05, 1);
 }
@@ -652,14 +643,29 @@ input[type="email"]:focus {
   display: block;
 }
 
+#subscribe {
+  padding: 90px 0 50px;
+}
+
+#subscribe .btn {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+#subscribe .promise {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 #footer {
   color: #8c8f94;
   font-size: 16px;
+  background-color: #f4f4f5;
 }
 
 #footer .footer-container {
   padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 #footer .copyright-container {
@@ -728,9 +734,4 @@ input[type="email"]:focus {
   color: #26272d;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-}
-
-#footer .made-by a img {
-  margin-top: -8px;
-  margin-left: 8px;
 }
