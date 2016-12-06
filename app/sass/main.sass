@@ -94,6 +94,38 @@ ul > li
 .btn-dark:hover, .btn-dark:focus
   color: #ffffff
 
+// Inputs
+input[type="text"],
+input[type="email"]
+  width: 502px
+  height: 50px
+  max-width: 100%
+  border: 1px solid rgba(38, 39, 45, 0.2)
+  padding: 16px 26px
+  font-size: 16px
+  background-color: transparent
+  padding-right: 148px
+  border-radius: 30px
+
+input[type="text"]:focus,
+input[type="email"]:focus
+  outline: none
+  color: #26272d
+
+// Forms
+#ready-to-buy .form-group,
+#subscribe .form-group
+  position: relative
+  width: 502px
+  max-width: 100%
+  margin: 0 auto
+
+#ready-to-buy .form-group .btn,
+#subscribe .form-group .btn
+  position: absolute
+  top: 4px
+  right: 4px
+
 // Navigation
 #main-nav
   position: fixed
@@ -254,3 +286,89 @@ ul > li
   position: absolute
   bottom: 110px
   left: 50%
+
+// iPhone Screens
+#iphone-screens
+  padding: 140px 0 800px
+  position: relative
+  background-color: #f4f4f5
+  overflow: hidden
+
+#iphone-screens h2
+  margin-bottom: 0
+
+#iphone-screens hr
+  width: 50px
+  height: 2px
+  margin: 40px auto
+  background-color: #267df4
+
+#iphone-screens .images-list
+  width: 100%
+  position: relative
+
+#iphone-screens .images-list li
+  position: absolute
+  width: 320px
+  top: 92px
+  box-shadow: 10px 10px 16px 0px rgba(61, 61, 62, 0.15)
+
+#iphone-screens .images-list li img
+  max-width: 100%
+
+#iphone-screens .images-list li:nth-child(1)
+  left: 50%
+  margin-left: -880px
+
+#iphone-screens .images-list li:nth-child(2)
+  left: 50%
+  margin-left: -530px
+
+#iphone-screens .images-list li:nth-child(4)
+  right: 50%
+  margin-right: -530px
+
+#iphone-screens .images-list li:nth-child(5)
+  right: 50%
+  margin-right: -880px
+
+#iphone-screens .images-list li.main-img
+  width: 395px
+  top: 0
+  left: 50%
+  margin-left: -193px
+  box-shadow: none
+
+#iphone-screens .images-list li.main-img img
+  max-width: 100%
+
+// Ready to buy
+#ready-to-buy
+  padding: 120px 0 130px
+  background-color: #f4f4f5
+
+#ready-to-buy form
+  margin-bottom: 66px
+
+#ready-to-buy .btn i
+  font-size: 12px
+  margin-left: 18px
+
+#ready-to-buy .btn-dark
+  padding: 9px 28px
+
+#ready-to-buy .btn-dark i
+  font-size: 32px
+  display: inline-block
+  margin-left: 0
+  margin-right: 18px
+
+#ready-to-buy .btn-dark span
+  font-size: 12px
+  display: inline-block
+  text-align: left
+
+#ready-to-buy .btn-dark span b
+  font-size: 22px
+  line-height: 18px
+
